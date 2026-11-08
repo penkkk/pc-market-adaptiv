@@ -23,8 +23,8 @@
   --dust-grey: #ccc5b9ff;
   --charcoal-brown: #403d39ff;
   --carbon-black: #252422ff;
-  --spicy-paprika: #eb5e28ff;
-  --burnt-paprika: #cc4514ff;
+  --spicy-paprika: #c44713ff;
+  --burnt-paprika: #a9340dff;
 
   --color-bg: var(--floral-white);          
   --color-bg-card: var(--floral-white);     
@@ -406,9 +406,21 @@ main,
   color: var(--color-text);
   background-color: transparent;
   border: 1px solid var(--color-border);
-  margin-bottom: 8px;
+  margin-bottom: 0;
   border-radius: var(--radius-md);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal__label {
+  flex-basis: 100%;
+  font-size: 14px;
+  font-weight: var(--fw-bold);
 }
 
 .modal__input:focus {
