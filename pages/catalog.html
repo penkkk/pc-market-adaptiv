@@ -48,7 +48,22 @@
         <div class="catalog-layout">
             <aside class="catalog-filters">
                 <h2 class="catalog-filters__title">Фильтры</h2>
-                <p class="catalog-filters__text">В разработке...</p>
+                <form class="catalog-filters__form">
+                    <fieldset class="catalog-filters__group">
+                        <legend class="catalog-filters__legend">Категория</legend>
+                        <label class="catalog-filters__option"><input type="checkbox" name="category" value="pc"> Готовые ПК</label>
+                        <label class="catalog-filters__option"><input type="checkbox" name="category" value="gpu"> Видеокарты</label>
+                    </fieldset>
+                    <fieldset class="catalog-filters__group">
+                        <legend class="catalog-filters__legend">Цена</legend>
+                        <label class="catalog-filters__option"><input type="checkbox" name="price" value="under-100000"> До 100 000 ₽</label>
+                        <label class="catalog-filters__option"><input type="checkbox" name="price" value="over-100000"> От 100 000 ₽</label>
+                    </fieldset>
+                    <div class="catalog-filters__actions">
+                        <button class="button button--primary" type="button">Применить</button>
+                        <button class="button button--secondary" type="reset">Сбросить</button>
+                    </div>
+                </form>
             </aside>
 
             <section class="catalog" aria-label="Товары каталога">
